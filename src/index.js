@@ -29,6 +29,6 @@ async function runIt() {
     console.log('  ');
     console.log('Result...');
     console.log('  ');
-    console.log(task.default(input.toString().trim().split('\n')));
+    console.log(task.default(input.toString().replace(/^\n|\n$/g, '').split('\n')));
     console.log('  ');
 }
